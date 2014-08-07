@@ -1,5 +1,5 @@
 {
-	"sourcesdir":"[path to your Geppetto sources (separate with / on OSX/Linux and \\ on Windows)]",
+	"sourcesdir":"/Users/mlolson/Projects/openworm",
 	"repos":[
 		{
 			"name":"org.geppetto",

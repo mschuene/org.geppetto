@@ -30,14 +30,12 @@ def main(argv):
     for repo in config['repos']:
         print 'Copying libraries for' , repo['name']
         targetdir = os.path.join(sourcesdir, repo['name'], 'target')
-        if not eclipse:
-            copyext(targetdir, 'jar')
-            copyext(targetdir, 'war')
+        copyext(targetdir, 'jar')
+        copyext(targetdir, 'war')
         copyext(os.path.join(targetdir, 'classes', 'lib'), 'jar')
         copyext(os.path.join(targetdir, 'classes', 'lib'), 'war')
 
-    if not eclipse:
-	    shutil.copy2(os.path.join(sourcesdir, 'org.geppetto', 'geppetto.plan'), os.path.join(serverHome, 'pickup'))
+    shutil.copy2(os.path.join(sourcesdir, 'org.geppetto', 'geppetto.plan'), os.path.join(serverHome, 'pickup'))
     print 'Geppetto build deployed to virgo'
 
 if __name__ == "__main__":
