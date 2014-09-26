@@ -16,5 +16,6 @@
 		<module>../org.geppetto.simulation</module>
 		<module>../org.geppetto.frontend</module>
 		<module>../org.geppetto.testbackend</module>
+		<module>../org.wormsim.frontend</module>		
 	</modules>
 </project>
